@@ -25,13 +25,15 @@
     <!-- Elemento con id in cui girerà Vue -->
     <main id="root">
         <div class="container">
-            <section class="row p-5">
+            <section class="row text-center p-5">
                 <div class="col-12 mb-5">
                     <input v-model="message" type="text">
                     <h1 v-bind:style="styleObject">{{ message }}</h1>
                 </div>
                 <div class="col-12">
-                    <input v-model="imgPath" type="text">
+                    <div class="mb-4">
+                        <input v-model="imgPath" type="text">
+                    </div>
                     <img v-bind:src="imgPath" width="660" height="480"/>
                 </div>
             </section>
