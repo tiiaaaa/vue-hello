@@ -27,7 +27,12 @@
         <div class="container">
             <section class="row">
                 <div class="col-12">
-
+                    <input v-model="message" type="text">
+                    <h1>{{ message }}</h1>
+                </div>
+                <div class="col-12">
+                    <input v-model="imgPath" type="text">
+                    <img v-bind:src="imgPath" width="660" height="480"/>
                 </div>
             </section>
         </div>
