@@ -5,6 +5,11 @@ const app = new Vue({
     data: {
         message: "ciao",
         imgPath: 'img/01.jpg', 
+        styleObject: {
+            fontSize: '3em',
+            fontWeight: 600,
+            color: 'red'
+        }
     }
 
 })
